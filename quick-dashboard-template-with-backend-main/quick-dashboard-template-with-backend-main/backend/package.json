@@ -1,0 +1,44 @@
+{
+  "name": "default-backend",
+  "version": "1.0.0",
+  "description": "A default backend template for MERN + Clerk auth",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev nodemon index.js",
+    "prod": "cross-env NODE_ENV=prod node index.js",
+    "lint": "eslint .",
+    "start": "cross-env NODE_ENV=dev nodemon index.js"
+  },
+  "keywords": ["MERN", "backend", "template", "clerk", "auth"],
+  "author": "BackendHub By GlitchAstra",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.782.0",
+    "@aws-sdk/s3-request-presigner": "^3.782.0",
+    "@clerk/backend": "^3.4.4",
+    "bcrypt": "^5.1.1",
+    "chalk": "^5.6.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "express-mongo-sanitize": "^2.2.0",
+    "helmet": "^8.1.0",
+    "hpp": "^0.2.3",
+    "mongoose": "^8.13.2",
+    "morgan": "^1.10.1",
+    "multer": "^1.4.5-lts.2",
+    "multer-s3": "^3.0.1",
+    "stripe": "^18.3.0",
+    "uuid": "^11.1.0",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.31.0",
+    "nodemon": "^3.1.9"
+  }
+}
